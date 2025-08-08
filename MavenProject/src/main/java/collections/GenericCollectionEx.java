@@ -30,10 +30,32 @@ public class GenericCollectionEx {
 		car.add("Benz");
 		System.out.println(car);
 		
+		List <String> fruits = new ArrayList<String>();
+		fruits.add("Apple");
+		fruits.add("Mango");
+		fruits.add("Apple");
+		fruits.add("Pomegrante");
+		System.out.println(fruits);
 		
+		System.out.println(fruits.get(0));
 		
+		fruits.set(2, "Orange");
+		fruits.add("Orange");
+		System.out.println(fruits);
 		
-
+		System.out.println(fruits.indexOf("Orange"));
+		
+		System.out.println(fruits.lastIndexOf("Orange"));
+		
+		fruits.remove(4);
+		System.out.println(fruits);
+		
+		System.out.println(fruits.contains("Orange"));
+		System.out.println(fruits.contains("Grapes"));
+		
+		System.out.println(fruits.isEmpty());
+		
+		System.out.println(fruits.size());
 	}
 
 }
